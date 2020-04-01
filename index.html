@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://js.arcgis.com/4.14/esri/themes/light/main.css"
+    />
+    <script src="https://js.arcgis.com/4.14/"></script>
+    <link rel="stylesheet" href="assets/css/app.css" />
+    <title>ArcGIS web map</title>
+  </head>
+  <body>
+    <header>
+      <div class="controls">
+        <div>
+          <label for="prikazGalerije">Prikazi galeriju?</label>
+          <input type="checkbox" id="prikazGalerije" checked />
+        </div>
+        <div>
+          <label for="prikazDonjeMape">Prikazi donju mapu?</label>
+          <input type="checkbox" id="prikazDonjeMape" checked />
+        </div>
+        <div class="mx-2">
+          <label for="prikazUdaljenosti">Udaljenost</label>
+          <input
+            class="ml-2"
+            type="range"
+            value="5000"
+            min="500"
+            max="50000"
+            id="prikazUdaljenosti"
+          />
+        </div>
+        <div class="mx-2">
+          <label for="promenaRotacije">Rotacija</label>
+          <input
+            class="ml-2"
+            type="range"
+            min="10"
+            max="90"
+            value="30"
+            id="promenaRotacije"
+          />
+        </div>
+      </div>
+      <div class="lat-long">
+        <form id="forma">
+          <input required type="number" placeholder="Lat" />
+          <input required type="number" placeholder="Long" />
+          <button class="btn btn-info" type="submit">Pretrazi</button>
+        </form>
+      </div>
+      <button id="prikazLokacije" class="btn btn-secondary">
+        Idi na moju lokaciju
+      </button>
+    </header>
+    <div id="viewDiv"></div>
+    <footer>
+      <p>
+        Autor:
+        <strong
+          ><a
+            target="blank"
+            href="https://www.linkedin.com/in/marko-medic-119b99130/"
+            >Marko Medic</a
+          ></strong
+        >
+      </p>
+    </footer>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+html,
+body,
+#viewDiv {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: pink;
+  flex-direction: column;
+}
+
+.controls {
+  display: flex;
+}
+
+footer {
+  background: rgba(13, 150, 230, 0.658);
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: white;
+}
