@@ -23,12 +23,12 @@
     <header>
       <div class="controls">
         <div>
-          <label for="prikazGalerije">Prikazi galeriju?</label>
-          <input type="checkbox" id="prikazGalerije" checked />
+          <label for="prikazDesneSekcije">Prikazi desnu sekciju?</label>
+          <input type="checkbox" id="prikazDesneSekcije" checked />
         </div>
         <div>
-          <label for="prikazDonjeMape">Prikazi donju mapu?</label>
-          <input type="checkbox" id="prikazDonjeMape" checked />
+          <label for="prikazDonjeSekcije">Prikazi donju sekciju?</label>
+          <input type="checkbox" id="prikazDonjeSekcije" checked />
         </div>
         <div class="mx-2">
           <label for="prikazUdaljenosti">Udaljenost</label>
@@ -53,16 +53,10 @@
           />
         </div>
       </div>
-      <div class="lat-long">
-        <form id="forma">
-          <input required type="number" placeholder="Lat" />
-          <input required type="number" placeholder="Long" />
-          <button class="btn btn-info" type="submit">Pretrazi</button>
-        </form>
-      </div>
       <button id="prikazLokacije" class="btn btn-secondary">
         Idi na moju lokaciju
       </button>
+      <button id="togluj" class="btn btn-primary my-3">Sakrij kontrole</button>
     </header>
     <div id="viewDiv"></div>
     <footer>

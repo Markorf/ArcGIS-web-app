@@ -14,10 +14,16 @@ header {
   align-items: center;
   background: pink;
   flex-direction: column;
+  transition: all 0.5s ease-in-out;
 }
 
 .controls {
   display: flex;
+}
+
+header.zatvori {
+  transform: translateY(-80px);
+  margin-bottom: -80px;
 }
 
 footer {
